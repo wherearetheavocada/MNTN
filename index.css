@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -16,18 +18,12 @@ html {
 	width: 100%;
 	height: 100%;
 }
-.hg-section {
+.section {
 	width: 100%;
 	height: 100%;
-}
-.mg-section {
-	width: 100%;
-	height: 100%;
-	background-image: url(img/MG.png);
-	background-repeat: no-repeat;
-	background-size: contain;
 }
 .hg-image {
+	filter: brightness(60%);
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -37,20 +33,165 @@ html {
 	z-index: 1;
 }
 .mg-image {
+	filter: brightness(77%);
 	position: absolute;
 	left: 0;
-	top: 750px;
+	top: 678px;
 	object-fit: fill;
 	width: 100%;
 	height: 100%;
 	z-index: 2;
 }
 .vg-image {
+	filter: brightness(87%);
 	position: absolute;
 	left: 0;
-	top: 1450px;
+	top: 864px;
 	object-fit: fill;
 	width: 100%;
 	height: 100%;
 	z-index: 3;
+}
+.header {
+	position: absolute;
+	z-index: 4;
+	width: 100%;
+	padding: 64px 80px;
+}
+.headerSection {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	margin: 0 auto;
+}
+.logo {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-size: 24px;
+	font-weight: 700;
+	color: rgb(162, 169, 172, 0.3);
+	text-decoration: none;
+}
+.logo:hover {
+	color: rgb(162, 169, 172);
+}
+.menu {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+}
+.menu button {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-size: 15px;
+	font-weight: 700;
+	color: rgb(162, 169, 172, 0.4);
+	background-color: rgb(0, 0, 0, 0);
+	border: none;
+}
+.menu button:hover {
+	color: rgb(162, 169, 172);
+}
+.account {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-size: 15px;
+	font-weight: 700;
+	color: rgb(162, 169, 172, 0.3);
+	background-color: rgb(0, 0, 0, 0);
+	border: none;
+}
+.account path {
+	fill: rgb(162, 169, 172, 0.3);
+}
+.account:hover {
+	color: rgb(162, 169, 172);
+}
+.high {
+	position: absolute;
+	z-index: 4;
+	width: 100%;
+	padding: 490px 80px;
+}
+.highSection {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	margin: 0 auto;
+}
+.social {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+}
+.social p {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-size: 15px;
+	font-weight: 700;
+	color: rgb(162, 169, 172, 0.3);
+	transform: rotate(90deg); /* Поворот на 90 градусов */
+	display: inline-block;
+}
+.social path {
+	fill: rgb(162, 169, 172, 0.3);
+}
+.subtitle {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	align-items: center;
+}
+.subtitle p {
+	color: rgb(133, 124, 86);
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-size: 15px;
+	font-weight: 700;
+}
+.subtitle span {
+	display: block;
+	width: 50px;
+	height: 2px;
+	background-color: rgb(133, 124, 86);
+	border-radius: 2px;
+	transition: all 0.3s ease;
+}
+.title {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	max-width: 540px;
+}
+.titleText {
+	color: rgb(162, 169, 172, 0.3);
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-size: 50px;
+	font-weight: 700;
+}
+.scrollDown {
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+}
+.scrollDown p {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-size: 15px;
+	font-weight: 700;
+	color: rgb(162, 169, 172, 0.3);
+}
+.scrollDown path {
+	fill: rgb(162, 169, 172, 0.3);
 }
