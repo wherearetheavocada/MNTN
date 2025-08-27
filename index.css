@@ -12,17 +12,45 @@ html {
 	padding: 0;
 	overflow-x: hidden;
 }
+.container {
+	width: 100%;
+	height: 100%;
+}
 .hg-section {
 	width: 100%;
 	height: 100%;
-	background-image: url(img/HG.png);
-	background-repeat: no-repeat;
-	background-size: contain;
 }
 .mg-section {
 	width: 100%;
 	height: 100%;
-	background-image: url(img/HG.png);
+	background-image: url(img/MG.png);
 	background-repeat: no-repeat;
 	background-size: contain;
+}
+.hg-image {
+	position: absolute;
+	left: 0;
+	top: 0;
+	object-fit: fill;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.mg-image {
+	position: absolute;
+	left: 0;
+	top: 750px;
+	object-fit: fill;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+.vg-image {
+	position: absolute;
+	left: 0;
+	top: 1450px;
+	object-fit: fill;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
 }
